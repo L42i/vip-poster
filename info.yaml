@@ -1,0 +1,7 @@
+# General info shown in the poster footer. Edit freely; add entries under `extra`.
+email: hvc@gatech.edu          # TODO: confirm contact address
+team: [Tristan, Alex, Keene]   # TODO: add last names / roles if wanted
+spaces:
+  - {name: "Rich (3DBox)", text: "Immersive sound system with 29 channels for research and artistic practice.", img: media/rich.png}
+  - {name: "Couch 204", text: "Main multi-purpose lab space with a 16-channel dome, desks and project areas.", img: media/couch204.jpg}
+extra: []                      # TODO: more general info ("...")

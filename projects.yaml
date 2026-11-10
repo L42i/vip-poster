@@ -1,0 +1,36 @@
+- name: BIKES
+  img: media/bikes.jpg
+  abstract: "A moving networked instrument for situated urban practice."   # TODO: 2-3 sentence abstract
+  majors: "TODO: e.g. CS, ECE, Music Tech"
+  team_size: "TODO"
+  age: "TODO"   # TODO: project age, e.g. "since 2024"
+- name: MËSH
+  img: media/mesh.jpg
+  abstract: "Network meta-instruments for enhanced interaction in music performance."   # TODO: 2-3 sentence abstract
+  majors: "TODO: e.g. CS, ECE, Music Tech"
+  team_size: "TODO"
+  age: "TODO"   # TODO: project age, e.g. "since 2024"
+- name: ARCube
+  img: media/arcube.png
+  abstract: "Augmented Reality interfaces for immersive audio performance and production."   # TODO: 2-3 sentence abstract
+  majors: "TODO: e.g. CS, ECE, Music Tech"
+  team_size: "TODO"
+  age: "TODO"   # TODO: project age, e.g. "since 2024"
+- name: BONG
+  img: media/bong.png
+  abstract: "Haptic musical interfaces and instruments."   # TODO: 2-3 sentence abstract
+  majors: "TODO: e.g. CS, ECE, Music Tech"
+  team_size: "TODO"
+  age: "TODO"   # TODO: project age, e.g. "since 2024"
+- name: Brain-Wav
+  img: media/brain-wav.jpg
+  abstract: "Sonification of brainwave data for scientists and artists."   # TODO: 2-3 sentence abstract
+  majors: "TODO: e.g. CS, ECE, Music Tech"
+  team_size: "TODO"
+  age: "TODO"   # TODO: project age, e.g. "since 2024"
+- name: Zerr~
+  img: media/zerr.png
+  abstract: "Experimental signal-driven spatialization in Pure Data and Max/MSP."   # TODO: 2-3 sentence abstract
+  majors: "TODO: e.g. CS, ECE, Music Tech"
+  team_size: "TODO"
+  age: "TODO"   # TODO: project age, e.g. "since 2024"
