@@ -3,13 +3,21 @@
 #let accent = rgb("#b3a369")   // GT gold
 #let navy = rgb("#003057")
 
-#set page(width: 36in, height: 48in, margin: 1in, fill: white)
+// Page size comes from the command line (see export.py); the design is always 36in wide
+// and is scaled uniformly to the page width. Extra or missing height is absorbed by the tile heights.
+#let page-w = float(sys.inputs.at("w", default: "36"))
+#let page-h = float(sys.inputs.at("h", default: "48"))
+#let s = page-w / 36
+#let design-h = page-h / s           // design height in inches
+#let extra = design-h - 48            // vs. the 36x48 design
+#set page(width: page-w * 1in, height: page-h * 1in, margin: 0pt, fill: white)
 #let sans = "Inter"          // body, as on the website
 #let mono = "Space Mono"     // headings and labels, as on the website
 #set text(font: sans, size: 34pt, fill: rgb("#282828"))
 
 #let label(t) = block(text(font: mono, size: 24pt, weight: "bold", fill: navy, tracking: 2pt)[#t])
 
+#let poster() = block(width: 36in, height: design-h * 1in, inset: 1in)[
 // Header: title, affiliation, team, logo
 #block(fill: navy, width: 100%, inset: 0.8in, radius: 12pt)[
   #set text(fill: white)
@@ -38,11 +46,7 @@
 #v(0.5in)
 
 // Intro and basic info
-#grid(columns: (1.5fr, 1fr), gutter: 0.8in, align: horizon,
-  [Students join across class years and stay with the team over multiple semesters,
-   taking on progressively larger parts of the work on interactive and immersive audio systems.],
-  list(..info.basics.map(b => [#text(font: mono, weight: "bold", fill: navy, size: 26pt)[#b.label:] #b.text])),
-)
+#info.intro #for b in info.basics [#text(font: mono, weight: "bold", fill: navy, size: 26pt)[#b.label:] #b.text]
 #v(0.5in)
 
 // One image fills the tile; several: first one large on the left, the rest stacked on the right
@@ -61,7 +65,7 @@
 // Project tiles: image fills the card, text sits on a translucent panel
 #grid(columns: if projects.len() == 1 { 1 } else { 2 }, gutter: 0.5in,
   ..projects.map(p => block(
-    stroke: 6pt + navy, radius: 16pt, clip: true, width: 100%, height: 11.9in,
+    stroke: 6pt + navy, radius: 16pt, clip: true, width: 100%, height: 12.3in + extra / 2 * 1in,
   )[
     #place(block(height: 100% - p.at("reserve", default: 0) * 1in, images(p)))
     #block(fill: navy, width: 100%, inset: (x: 0.4in, y: 0.25in))[
@@ -82,13 +86,16 @@
   #label("OUR SPACES")
   #v(0.15in)
   #let space(sp) = [
-    #block(height: 7in, clip: true, radius: 8pt, image(sp.img, width: 100%, height: 100%, fit: "cover"))
+    #block(height: 5.6in, clip: true, radius: 8pt, image(sp.img, width: 100%, height: 100%, fit: "cover"))
     #text(font: mono, weight: "bold", fill: navy)[#sp.name] \
     #text(size: 24pt)[#sp.text]
   ]
-  #grid(columns: (8in, 1fr, 8in), gutter: 0.3in, align: top,
+  #grid(columns: (1fr, 12.9in, 1fr), gutter: 0.3in, align: top,
     space(info.spaces.at(0)),
-    block(height: 7in, clip: true, radius: 8pt, image("media/map.png", width: 100%, height: 100%, fit: "cover")),
+    block(height: 5.6in, clip: true, radius: 8pt, image("media/map.png", width: 100%, height: 100%, fit: "cover")),
     space(info.spaces.at(1)),
   )
 ]
+]
+
+#scale(s * 100%, origin: top + left, reflow: true, poster())

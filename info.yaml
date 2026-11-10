@@ -5,8 +5,7 @@ team: [Tristan Peng, Alejandro Suarez, Keene Cheung]
 spaces:   # west to east, matching the map
   - {name: "Couch 204", text: "Main multi-purpose lab space with a 16-channel dome, desks and project areas.", img: media/couch204.jpg}
   - {name: "Rich (3DBox)", text: "Immersive sound system with 29 channels for research and artistic practice.", img: media/rich.png}
+intro: "In dedicated projects and teams, L42i's VIP explores how we can interact with spatial audio - in artistic and scientific contexts. Many of our projects use 3D multichannel loudspeaker systems, running on Linux Audio servers. Our work combines design and engineering with creative applications and methods from Human Computer Interaction research. By combining concerts, installations, and experiments we have a holistic perspective, ideal for interdisciplinary teams."
 basics:
-  - {label: AFFILIATION, text: "College of Design (School of Music), Georgia Tech"}
-  - {label: COURSE, text: "VIP 2601 to 6603 (SO to GR)"}   # from the website; TODO confirm
-  - {label: GENERAL MEETING TIME, text: "TBA"}
+  - {label: MEETING TIMES, text: "Individual for each project team"}
 extra: []                      # TODO: more general info ("...")
