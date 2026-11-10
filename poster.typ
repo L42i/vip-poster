@@ -3,10 +3,10 @@
 #let accent = rgb("#b3a369")   // GT gold
 #let navy = rgb("#003057")
 
-// Page size comes from the command line (see export.py); the design is always 36in wide
+// The poster is 30x40 in portrait (VIP Rush format). The design is laid out 36in wide
 // and is scaled uniformly to the page width. Extra or missing height is absorbed by the tile heights.
-#let page-w = float(sys.inputs.at("w", default: "36"))
-#let page-h = float(sys.inputs.at("h", default: "48"))
+#let page-w = float(sys.inputs.at("w", default: "30"))
+#let page-h = float(sys.inputs.at("h", default: "40"))
 #let s = page-w / 36
 #let design-h = page-h / s           // design height in inches
 #let extra = design-h - 48            // vs. the 36x48 design
