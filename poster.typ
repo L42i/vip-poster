@@ -17,7 +17,7 @@
     [
       #text(font: mono, size: 54pt, weight: "bold")[VIP: Interacting with Sound and Space] \
       #v(0.2in)
-      #text(font: mono, size: 36pt)[#text(fill: accent)[Team:] #info.team.join("  ·  ")] \
+      #text(font: mono, size: 34pt)[#text(fill: accent)[Grad Advisors:] #info.team.join(" · ")] \
       #v(0.1in)
       #text(font: mono, size: 36pt)[#text(fill: accent)[Contact:] #info.contact_name, #info.email]
     ],
