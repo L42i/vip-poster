@@ -1,7 +1,12 @@
 # General info shown in the poster footer. Edit freely; add entries under `extra`.
+contact_name: Henrik von Coler
 email: hvc@gatech.edu          # TODO: confirm contact address
-team: [Tristan, Alex, Keene]   # TODO: add last names / roles if wanted
+team: [Tristan Peng, Alejandro Suarez, Keene Cheung]
 spaces:
   - {name: "Rich (3DBox)", text: "Immersive sound system with 29 channels for research and artistic practice.", img: media/rich.png}
   - {name: "Couch 204", text: "Main multi-purpose lab space with a 16-channel dome, desks and project areas.", img: media/couch204.jpg}
+basics:
+  - {label: AFFILIATION, text: "College of Design (School of Music), Georgia Tech"}
+  - {label: COURSE, text: "VIP 2601 to 6603 (SO to GR)"}   # from the website; TODO confirm
+  - {label: GENERAL MEETING TIME, text: "TBA"}
 extra: []                      # TODO: more general info ("...")
