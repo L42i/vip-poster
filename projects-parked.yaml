@@ -1,0 +1,15 @@
+# Removed from the poster for now. Move an entry back into projects.yaml to restore it.
+- name: BONG
+  imgs: [media/bong.png]
+  abstract: "Haptic musical interfaces and instruments."   # TODO: 2-3 sentence abstract
+  majors: "TODO: e.g. CS, ECE, Music Tech"
+  team_size: "TODO"
+  meeting: "TODO: e.g. Tue 3-5 pm"   # individual team meeting hours
+  age: "TODO"   # TODO: project age, e.g. "since 2024"
+- name: Zerr~
+  imgs: [media/zerr.png]
+  abstract: "Experimental signal-driven spatialization in Pure Data and Max/MSP."   # TODO: 2-3 sentence abstract
+  majors: "TODO: e.g. CS, ECE, Music Tech"
+  team_size: "TODO"
+  meeting: "TODO: e.g. Tue 3-5 pm"   # individual team meeting hours
+  age: "TODO"   # TODO: project age, e.g. "since 2024"

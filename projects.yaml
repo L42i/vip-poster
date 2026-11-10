@@ -1,42 +1,24 @@
 - name: BIKES
-  img: media/bikes.jpg
-  abstract: "A moving networked instrument for situated urban practice."   # TODO: 2-3 sentence abstract
-  majors: "TODO: e.g. CS, ECE, Music Tech"
-  team_size: "TODO"
-  meeting: "TODO: e.g. Tue 3-5 pm"   # individual team meeting hours
-  age: "TODO"   # TODO: project age, e.g. "since 2024"
-- name: MËSH
-  img: media/mesh.jpg
-  abstract: "Network meta-instruments for enhanced interaction in music performance."   # TODO: 2-3 sentence abstract
-  majors: "TODO: e.g. CS, ECE, Music Tech"
-  team_size: "TODO"
-  meeting: "TODO: e.g. Tue 3-5 pm"   # individual team meeting hours
-  age: "TODO"   # TODO: project age, e.g. "since 2024"
-- name: ARCube
-  img: media/arcube.png
-  abstract: "Augmented Reality interfaces for immersive audio performance and production."   # TODO: 2-3 sentence abstract
-  majors: "TODO: e.g. CS, ECE, Music Tech"
-  team_size: "TODO"
-  meeting: "TODO: e.g. Tue 3-5 pm"   # individual team meeting hours
-  age: "TODO"   # TODO: project age, e.g. "since 2024"
-- name: BONG
-  img: media/bong.png
-  abstract: "Haptic musical interfaces and instruments."   # TODO: 2-3 sentence abstract
-  majors: "TODO: e.g. CS, ECE, Music Tech"
-  team_size: "TODO"
-  meeting: "TODO: e.g. Tue 3-5 pm"   # individual team meeting hours
-  age: "TODO"   # TODO: project age, e.g. "since 2024"
-- name: Brain-Wav
-  img: media/brain-wav.jpg
-  abstract: "Sonification of brainwave data for scientists and artists."   # TODO: 2-3 sentence abstract
-  majors: "TODO: e.g. CS, ECE, Music Tech"
-  team_size: "TODO"
-  meeting: "TODO: e.g. Tue 3-5 pm"   # individual team meeting hours
-  age: "TODO"   # TODO: project age, e.g. "since 2024"
-- name: Zerr~
-  img: media/zerr.png
-  abstract: "Experimental signal-driven spatialization in Pure Data and Max/MSP."   # TODO: 2-3 sentence abstract
-  majors: "TODO: e.g. CS, ECE, Music Tech"
-  team_size: "TODO"
-  meeting: "TODO: e.g. Tue 3-5 pm"   # individual team meeting hours
-  age: "TODO"   # TODO: project age, e.g. "since 2024"
+  imgs: [media/bikes-3.jpg, media/bikes-1.jpg, media/bikes-2.jpg]   # first = main image
+  cols: [2fr, 1fr]
+  reserve: 3.6   # inches kept free of images at the bottom for the text
+  abstract: "This project combines industrial design with all kinds of engineering. The four networked bikes with loudspeakers can be used for critical interventions in the urban space. Our latest version runs AI-supported camera tracking. Next step: new hardware design (the black edition)."
+  majors: ["*Industrial Design*", "Music Tech", "Computer Science", "Electrical Engineering", "Public Policy", "Literature, Media, and Communication"]
+- name: MËSH and SuperMËSH
+  imgs: [media/mesh-hamburg.jpg, media/mesh-1.jpg, media/mesh-2.jpg]   # first = main image
+  cols: [2fr, 1fr]
+  reserve: 3.6   # inches kept free of images at the bottom for the text
+  abstract: "This project explores distributed systems for immersive multi-user interaction. MËSH has traveled a lot - across the US, to Europe and Asia - to create experiences for musicians and audiences. With SuperMËSH we are taking it to a next level with distributed multi-camera movement tracking."
+  majors: ["Computer Science", "Computational Media", "Electrical Engineering", "Music Tech"]
+- name: XR Music Interaction
+  imgs: [media/xr-1.jpg, media/xr-vr.jpg, media/xr-2.jpg]   # first = main image
+  cols: [2fr, 1fr]
+  reserve: 3.6   # inches kept free of images at the bottom for the text
+  abstract: "Our lab explores how we can combine XR interfaces with 3D loudspeaker systems for immersive interactive experiences. This lets musicians and everyone move sound in space through augmented objects. We explore new methods for evaluating the interaction in creative contexts."
+  majors: ["Music Tech", "Computer Science", "Computational Media", "Electrical Engineering", "Industrial Design"]   # TODO: guessed, please confirm
+- name: brain.wav
+  imgs: [media/bw-2.jpg, media/bw-1.jpg, media/bw-3.jpg]   # first = main image
+  cols: [2fr, 1fr]
+  reserve: 3.6
+  abstract: "In collaboration with XXX we are exploring how we can use immersive loudspeaker systems to make fMRI data audible. This HCI research aims at tools for neuroscience researchers. With real-time input devices, they can navigate the recorded data, while hearing it."   # TODO: replace XXX
+  majors: ["Music Tech", "Computer Science", "Neuroscience", "Biomedical Engineering", "Psychology"]   # TODO: guessed, please confirm
